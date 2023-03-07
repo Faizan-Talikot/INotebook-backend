@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 
 //ye mongodb se connect karne ki uri hai
-const mongoURI = "mongodb://0.0.0.0:27017/inotebook"
+const mongoURI = "mongodb+srv://faizan:1234@cluster0.e4p86uw.mongodb.net/inotebook"
 
 const connectToMongo = ()=>{
     mongoose.connect(mongoURI ,{ useNewUrlParser: true, useUnifiedTopology: true }).then( ()=>{
